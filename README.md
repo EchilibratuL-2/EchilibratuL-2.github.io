@@ -3,4 +3,4 @@ my personal CV
 
 ## Live
 
-[echilibratul-2.github.io](ehttps://echilibratul-2.github.io)
+[echilibratul-2.github.io](https://echilibratul-2.github.io)
