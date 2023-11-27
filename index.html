@@ -8,14 +8,14 @@
   </head>
   <body>
     <header>
-      <h1>Duta Ionut-Gabriel.</h1>
+      <h1 id="nametitle" >Duta Ionut-Gabriel.</h1>
       <img width="110" height="120" src="images/IMG_2100.jpg" alt="selfie" />
       <p id="job-title">Front End Developer</p>
       <ul id="top-menu-bar">
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#" class="active">Projects</a></li>
-        <li><a href="#">Languages</a></li>
+        <li><a class="fontstyle" href="#">HOME</a></li>
+        <li><a class="fontstyle" href="#">Skills</a></li>
+        <li><a class="fontstyle" href="#" class="active">Projects</a></li>
+        <li><a class="fontstyle" href="#">Languages</a></li>
       </ul>
     </header>
 
@@ -23,7 +23,7 @@
       <div id="side-menu">
         <section>
           <form action="secretara.html">
-            <h2>Contact</h2>
+            <h2 class="fontstyle" >Contact</h2>
             <div>
               <label for="userEmail">Email </label>
               <input
@@ -49,47 +49,42 @@
             <button type="submit">Send</button>
           </form>
         </section>
-        <section>
-          <p>
-            start server: CTRL + Shift + P -> Browser Sync mode in Browser ->
-            Enter
-          </p>
-        </section>
       </div>
       <div id="main">
-        <h2>Skills</h2>
+        <h2 class="fontstyle" >Skills</h2>
         <ul>
           <li class="favorite">HTML</li>
-          <li>CSS</li>
+          <li class="favorite" >CSS</li>
           <li class="favorite">JS</li>
         </ul>
 
-        <h2>Known Languages</h2>
-        <table border="1">
+        <h2 class="fontstyle" >Known Languages</h2>
+        <table class="tablebox" border="1">
           <tr>
-            <th>Language</th>
-            <th>Level</th>
+            <th class="fontstyle" >Language</th>
+            <th class="fontstyle" >Level</th>
           </tr>
           <tr>
             <td class="favorite">Romanian</td>
-            <td>Native</td>
+            <td class="fontstyle" >Native</td>
           </tr>
 
           <tr>
-            <td>English</td>
-            <td>Profesional</td>
+            <td class="favorite" >English</td>
+            <td class="fontstyle" >Profesional</td>
           </tr>
         </table>
       </div>
     </section>
     <footer>
-      Open my
-      <a href="https://www.linkedin.com/in/gabi-duta-b9a1bb252/" target="_blank"
-        >LinkedIn</a
-      >
-      account.
+      <tr>
+        <td>
+      <a class="footer" href="https://www.linkedin.com/in/gabi-duta-b9a1bb252/"><img src="images/linkedin.png" alt="Linkedin account" style="width:42px;height:42px;">
+      </a>
+  </td>
+  </tr>
     </footer>
-
     <script src="examples.js"></script>
   </body>
 </html>
+

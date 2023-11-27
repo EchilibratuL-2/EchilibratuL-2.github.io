@@ -34,6 +34,8 @@ th {
   color: #fff;
   margin: 0;
   padding: 2px;
+  font-family: "Sofia", sans-serif;
+  font-size: 25px;
 }
 #top-menu-bar li {
   display: inline-block;
@@ -46,7 +48,7 @@ th {
   color: #fff;
   padding: 0 10px;
   border-radius: 4px;
-  transition: 1.5s;
+  transition: 0.3s;
 }
 #top-menu-bar a:visited {
   color: #fff;
@@ -63,7 +65,26 @@ th {
 .favorite {
   font-weight: bold;
   color: blue;
+  font-family: "Sofia", sans-serif;
 }
 td.favorite {
   font-weight: normal;
+}
+a:link.footer {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+#tablebox {
+  background-color: #334455;
+  color: white;
+  padding: 15px;
+  text-align: left;
+  font-family: "Sofia", sans-serif
+}
+.fontstyle {
+  font-family: "Sofia", sans-serif;
+}
+#nametitle {
+  font-family: "Audiowide", sans-serif;
 }
