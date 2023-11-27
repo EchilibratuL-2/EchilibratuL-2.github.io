@@ -27,6 +27,7 @@ th {
 #job-title {
   color: green;
   text-align: right;
+  font-family: "Audiowide", sans-serif;
 }
 #top-menu-bar {
   text-align: center;
@@ -53,7 +54,7 @@ th {
 #top-menu-bar a:visited {
   color: #fff;
 }
-#top-menu-bar a:active,
+#top-menu-bar a.active,
 #top-menu-bar a:hover {
   color: #334455;
   background: #fff;
@@ -86,5 +87,5 @@ a:link.footer {
   font-family: "Sofia", sans-serif;
 }
 #nametitle {
-  font-family: "Audiowide", sans-serif;
+font-family: "Audiowide", sans-serif; 
 }

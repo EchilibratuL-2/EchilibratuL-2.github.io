@@ -8,14 +8,20 @@
   </head>
   <body>
     <header>
-      <h1 id="nametitle" >Duta Ionut-Gabriel.</h1>
+      <div style="display: flex">
+        <div>
       <img width="110" height="120" src="images/IMG_2100.jpg" alt="selfie" />
-      <p id="job-title">Front End Developer</p>
+      </div>
+      <div>
+        <h1 id="nametitle" >Duta Ionut-Gabriel.</h1> 
+        <p id="job-title">Front End Developer</p>
+      </div>
+      </div>
       <ul id="top-menu-bar">
         <li><a class="fontstyle" href="#">HOME</a></li>
         <li><a class="fontstyle" href="#">Skills</a></li>
-        <li><a class="fontstyle" href="#" class="active">Projects</a></li>
-        <li><a class="fontstyle" href="#">Languages</a></li>
+        <li><a class="fontstyle active" href="#">Projects</a></li>
+        <li><a class="fontstyle" href="#" onclick="showLanguages()">Languages</a></li>
       </ul>
     </header>
 
@@ -51,18 +57,23 @@
         </section>
       </div>
       <div id="main">
+        <div style="display:none">
         <h2>Home</h2>
         <p>Welcome...</p>
+      </div>
+      <div style="display:none">
         <h2 class="fontstyle" >Skills</h2>
         <ul>
           <li class="favorite">HTML</li>
           <li class="favorite" >CSS</li>
           <li class="favorite">JS</li>
         </ul>
-
-        <h2>Projects</h2>
-        <p>...</p>
-
+      </div>
+      <div>
+        <h2 class="fontstyle">Projects</h2>
+        <p class="fontstyle">...</p>
+      </div>
+      <div style="display:none" id="languages">
         <h2 class="fontstyle" >Known Languages</h2>
         <table class="tablebox" border="1">
           <tr>
@@ -89,7 +100,7 @@
   </td>
   </tr>
     </footer>
-    <script src="examples.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
 
