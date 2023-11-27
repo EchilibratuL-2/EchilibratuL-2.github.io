@@ -19,7 +19,7 @@
       </div>
       <ul id="top-menu-bar">
         <li><a class="fontstyle" href="#">HOME</a></li>
-        <li><a class="fontstyle" href="#">Skills</a></li>
+        <li><a class="fontstyle" href="#" onclick="showSkills()">Skills</a></li>
         <li><a class="fontstyle active" href="#">Projects</a></li>
         <li><a class="fontstyle" href="#" onclick="showLanguages()">Languages</a></li>
       </ul>
@@ -61,7 +61,8 @@
         <h2>Home</h2>
         <p>Welcome...</p>
       </div>
-      <div style="display:none">
+
+      <div id = "skills" style="display:none">
         <h2 class="fontstyle" >Skills</h2>
         <ul>
           <li class="favorite">HTML</li>
@@ -69,8 +70,9 @@
           <li class="favorite">JS</li>
         </ul>
       </div>
+      
       <div>
-        <h2 class="fontstyle">Projects</h2>
+        <h2 class="fontstyle" id="projects">Projects</h2>
         <p class="fontstyle">...</p>
       </div>
       <div style="display:none" id="languages">
@@ -88,6 +90,7 @@
           <tr>
             <td class="favorite" >English</td>
             <td class="fontstyle" >Profesional</td>
+
           </tr>
         </table>
       </div>
@@ -103,4 +106,5 @@
     <script src="index.js"></script>
   </body>
 </html>
+
 
