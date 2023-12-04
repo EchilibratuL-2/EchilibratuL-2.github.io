@@ -18,9 +18,9 @@
       </div>
       </div>
       <ul id="top-menu-bar">
-        <li><a class="fontstyle" href="#">HOME</a></li>
+        <li><a class="fontstyle" href="#" onclick="showHome()">HOME</a></li>
         <li><a class="fontstyle" href="#" onclick="showSkills()">Skills</a></li>
-        <li><a class="fontstyle active" href="#">Projects</a></li>
+        <li><a class="fontstyle active" href="#" onclick="showProjects()">Projects</a></li>
         <li><a class="fontstyle" href="#" onclick="showLanguages()">Languages</a></li>
       </ul>
     </header>
@@ -57,7 +57,7 @@
         </section>
       </div>
       <div id="main">
-        <div style="display:none">
+        <div id="home" style="display:none">
         <h2>Home</h2>
         <p>Welcome...</p>
       </div>
@@ -70,12 +70,12 @@
           <li class="favorite">JS</li>
         </ul>
       </div>
-      
-      <div>
-        <h2 class="fontstyle" id="projects">Projects</h2>
-        <p class="fontstyle">...</p>
+
+      <div id="projects" class="fontstyle">
+        <h2>Projects</h2>
+        <p>...</p>
       </div>
-      <div style="display:none" id="languages">
+      <div style="display: none" id="languages">
         <h2 class="fontstyle" >Known Languages</h2>
         <table class="tablebox" border="1">
           <tr>
