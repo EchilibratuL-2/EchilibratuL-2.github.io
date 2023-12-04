@@ -18,6 +18,14 @@ body {
 #main {
   flex: 3;
 }
+.page {
+ background-color: #fff;
+ padding: 10px;
+ margin: 10px;
+ border-radius: 4px;
+ box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
 td {
   padding: 4px;
 }
