@@ -10,18 +10,35 @@
     <header>
       <div style="display: flex">
         <div>
-      <img width="110" height="120" src="images/IMG_2100.jpg" alt="selfie" />
-      </div>
-      <div>
-        <h1 id="nametitle" >Duta Ionut-Gabriel.</h1> 
-        <p id="job-title">Front End Developer</p>
-      </div>
+          <img
+            width="110"
+            height="120"
+            src="images/IMG_2100.jpg"
+            alt="selfie"
+          />
+        </div>
+        <div>
+          <h1 id="nametitle">Duta Ionut-Gabriel.</h1>
+          <p id="job-title">Front End Developer</p>
+        </div>
       </div>
       <ul id="top-menu-bar">
-        <li><a class="fontstyle" href="#" onclick="showPage('home')">HOME</a></li>
-        <li><a class="fontstyle" href="#" onclick="showPage('skills')">Skills</a></li>
-        <li><a class="fontstyle active" href="#" onclick="showPage('projects')">Projects</a></li>
-        <li><a class="fontstyle" href="#" onclick="showPage('languages')">Languages</a></li>
+        <li>
+          <a class="fontstyle" href="#" onclick="showPage('home')">HOME</a>
+        </li>
+        <li>
+          <a class="fontstyle" href="#" onclick="showPage('skills')">Skills</a>
+        </li>
+        <li>
+          <a class="fontstyle active" href="#" onclick="showPage('projects')"
+            >Projects</a
+          >
+        </li>
+        <li>
+          <a class="fontstyle" href="#" onclick="showPage('languages')"
+            >Languages</a
+          >
+        </li>
       </ul>
     </header>
 
@@ -29,7 +46,7 @@
       <div id="side-menu">
         <section>
           <form action="secretara.html">
-            <h2 class="fontstyle" >Contact</h2>
+            <h2 class="fontstyle">Contact</h2>
             <div>
               <label for="userEmail">Email </label>
               <input
@@ -56,55 +73,62 @@
           </form>
         </section>
       </div>
+
       <div id="main">
-        <div id="home" class="page" style="display:none">
-        <h2>Home</h2>
-        <p>Welcome...</p>
-      </div>
+        <div id="home" class="page">
+          <h2>Home</h2>
+          <p>Welcome...</p>
+        </div>
 
-      <div id = "skills" style="display:none">
-        <h2 class="fontstyle page" >Skills</h2>
-        <ul>
-          <li class="favorite">HTML</li>
-          <li class="favorite" >CSS</li>
-          <li class="favorite">JS</li>
-        </ul>
-      </div>
+        <div id="skills" class="page">
+          <h2 class="fontstyle">Skills</h2>
+          <ul>
+            <li class="favorite">HTML</li>
+            <li class="favorite">CSS</li>
+            <li class="favorite">JS</li>
+          </ul>
+        </div>
 
-      <div id="projects" class="fontstyle page">
-        <h2>Projects</h2>
-        <p>...</p>
-      </div>
-      <div style="display: none" id="languages">
-        <h2 class="fontstyle" >Known Languages</h2>
-        <table class="tablebox" border="1">
-          <tr>
-            <th class="fontstyle" >Language</th>
-            <th class="fontstyle" >Level</th>
-          </tr>
-          <tr>
-            <td class="favorite">Romanian</td>
-            <td class="fontstyle" >Native</td>
-          </tr>
+        <div id="projects" class="fontstyle page">
+          <h2>Projects</h2>
+          <p>...</p>
+        </div>
 
-          <tr>
-            <td class="favorite" >English</td>
-            <td class="fontstyle" >Profesional</td>
+        <div id="languages" class="page">
+          <h2 class="fontstyle">Known Languages</h2>
+          <table class="tablebox" border="1">
+            <tr>
+              <th class="fontstyle">Language</th>
+              <th class="fontstyle">Level</th>
+            </tr>
+            <tr>
+              <td class="favorite">Romanian</td>
+              <td class="fontstyle">Native</td>
+            </tr>
 
-          </tr>
-        </table>
+            <tr>
+              <td class="favorite">English</td>
+              <td class="fontstyle">Profesional</td>
+            </tr>
+          </table>
+        </div>
       </div>
     </section>
     <footer>
       <tr>
         <td>
-      <a class="footer" href="https://www.linkedin.com/in/gabi-duta-b9a1bb252/"><img src="images/linkedin.png" alt="Linkedin account" style="width:42px;height:42px;">
-      </a>
-  </td>
-  </tr>
+          <a
+            class="footer"
+            href="https://www.linkedin.com/in/gabi-duta-b9a1bb252/"
+            ><img
+              src="images/linkedin.png"
+              alt="Linkedin account"
+              style="width: 42px; height: 42px"
+            />
+          </a>
+        </td>
+      </tr>
     </footer>
     <script src="index.js"></script>
   </body>
 </html>
-
-
