@@ -21,5 +21,16 @@ function showPage(id) {
   activePage = id;
 }
 
-// executii 
+function initEvents() {
+  var toolbar = document.querySelector("#top-menu-bar a");
+  console.info("toolbar", toolbar);
+  toolbar.addEventListener("click", function (e) {
+    var page = e.target.innerHTML.toLowerCase();
+    console.warn("event", page);
+    showPage(page);
+  });
+}
+
+// executii
 showPage(activePage);
+initEvents();
