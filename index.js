@@ -22,7 +22,7 @@ function showPage(id) {
 }
 
 function initEvents() {
-  var toolbar = document.querySelector("#top-menu-bar a");
+  var toolbar = document.querySelector("#top-menu-bar");
   console.info("toolbar", toolbar);
   toolbar.addEventListener("click", function (e) {
     var page = e.target.innerHTML.toLowerCase();
