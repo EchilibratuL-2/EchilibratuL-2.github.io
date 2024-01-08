@@ -25,9 +25,11 @@ function initEvents() {
   var toolbar = document.querySelector("#top-menu-bar");
   console.info("toolbar", toolbar);
   toolbar.addEventListener("click", function (e) {
-    var page = e.target.innerHTML.toLowerCase();
-    console.warn("event", page);
-    showPage(page);
+    if (e.target.matches("a")) {
+      var page = e.target.innerHTML.toLowerCase();
+      console.warn("event", page);
+      showPage(page);
+    }
   });
 }
 
