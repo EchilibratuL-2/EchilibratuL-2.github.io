@@ -1,5 +1,5 @@
 // variabile publice
-var activePage = "skills";
+var activePage = "home";
 
 // functii publice
 function hide(id) {
@@ -17,7 +17,7 @@ function show(id) {
 function showPage(id) {
   console.info("show page", id);
   var prevlink = document.querySelector("a[data-page=" + activePage + "]");
-  prevlink.classList.remove('active');
+  prevlink.classList.remove("active");
   hide(activePage);
 
   console.warn(`a[data-page=${id}]`);
@@ -40,13 +40,19 @@ function initEvents() {
 }
 
 function showSkills() {
-  var ul = document.querySelector('#skills ul');
-  ul.innerHTML = "<li>HTML</li>";
-  ul.innerHTML = ul.innerHTML + "<li>CSS</li>";
-  ul.innerHTML += "<li>JS</li>";
-}
+  var ul = document.querySelector("#skills ul");
 
+  var skills = ["HTML", "CSS", "JS"];
+
+  var text = skills.map(function (skill) {
+    console.info("inside %o map", skill);
+    return `<li>${skill}</li>`;
+  });
+  console.warn(text);
+
+ul.innerHTML = text.join("");
+}
 // executii
-showPage(activePage);
 initEvents();
+showPage(activePage);
 showSkills();
