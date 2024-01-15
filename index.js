@@ -3,14 +3,14 @@ var activePage = "home";
 
 // functii publice
 function $(selector) {
-  var el =  document.querySelector(selector);
+  var el = document.querySelector(selector);
   console.info("%o found:", selector, el);
   return el;
 }
 
 function hide(id) {
   console.info("hide", id);
-  $('#' + id).style.display = "none";
+  $("#" + id).style.display = "none";
 }
 
 function show(id) {
@@ -43,19 +43,8 @@ function initEvents() {
   });
 }
 
-function showSkills() {
+function showSkills(skills) {
   var ul = $("#skills ul");
-
-  var skills = [
-    {
-      name: "HTML",
-      endorcements: 6,
-      favorite: true,
-    },
-    { name: "CSS", endorcements: 5 },
-    { name: "JS", endorcements: 7, favorite: true },
-    { name: "Word", endorcements: 1, favorite: false },
-  ];
 
   var text = skills.map(function (skill) {
     var cls = "";
@@ -73,6 +62,6 @@ function showSkills() {
 }
 
 // executii
-showSkills();
+// showSkills([]);
 showPage(activePage);
 initEvents();
