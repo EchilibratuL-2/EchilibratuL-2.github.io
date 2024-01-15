@@ -2,6 +2,11 @@
 var activePage = "home";
 
 // functii publice
+function $(selector) {
+  var el =  document.querySelector(selector);
+  return el;
+}
+
 function hide(id) {
   console.info("hide", id);
   document.getElementById(id).style.display = "none";
@@ -16,20 +21,18 @@ function show(id) {
 
 function showPage(id) {
   console.info("show page", id);
-  var prevlink = document.querySelector("a[data-page=" + activePage + "]");
+  var prevlink = $("a[data-page=" + activePage + "]");
   prevlink.classList.remove("active");
   hide(activePage);
 
-  console.warn(`a[data-page=${id}]`);
-  var nextLink = document.querySelector(`a[data-page=${id}]`);
+  var nextLink = $(`a[data-page=${id}]`);
   nextLink.classList.add("active");
   show(id);
   activePage = id;
 }
 
 function initEvents() {
-  var toolbar = document.querySelector("#top-menu-bar");
-  console.info("toolbar", toolbar);
+  var toolbar = $("#top-menu-bar");
   toolbar.addEventListener("click", function (e) {
     if (e.target.matches("a")) {
       var page = e.target.innerHTML.toLowerCase();
@@ -47,19 +50,11 @@ function showSkills() {
       name: "HTML",
       endorcements: 6,
       favorite: true,
-  },
-    { name: "CSS",
-      endorcements: 5
-  },
-    { name: "JS", 
-      endorcements: 7,
-      favorite: true,
-  },
-    { name: "Word", 
-      endorcements: 1,
-      favorite: false,
-   },
-];
+    },
+    { name: "CSS", endorcements: 5 },
+    { name: "JS", endorcements: 7, favorite: true },
+    { name: "Word", endorcements: 1, favorite: false },
+  ];
 
   var text = skills.map(function (skill) {
     var cls = "";
