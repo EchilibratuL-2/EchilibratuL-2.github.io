@@ -42,27 +42,40 @@ function initEvents() {
 function showSkills() {
   var ul = document.querySelector("#skills ul");
 
-  var skills =[
+  var skills = [
     {
-       name: "HTML", 
-       endorcements: 6,
-   }, 
-    {  name: "CSS",
-    endorcements: 5,
-    }, 
-    {  name: "JS",
-    endorcements: 4,
+      name: "HTML",
+      endorcements: 6,
+      favorite: true,
+  },
+    { name: "CSS",
+      endorcements: 5
+  },
+    { name: "JS", 
+      endorcements: 7,
+      favorite: true,
+  },
+    { name: "Word", 
+      endorcements: 1,
+      favorite: false,
    },
-    ];
+];
 
   var text = skills.map(function (skill) {
-    console.info("inside %o map", skill);
-    return `<li>${skill.name} <span> - ${skill.endorcements}</span></li>`;
+    var cls = "";
+    if (skill.favorite == true) {
+      console.warn("f", skill);
+      cls = "favorite";
+    }
+
+    console.info("inside %o map", skill.favorite, cls);
+    return `<li class="${cls}">${skill.name} <span> - ${skill.endorcements}</span></li>`;
   });
   console.warn(text);
 
   ul.innerHTML = text.join("");
 }
+
 // executii
 showSkills();
 showPage(activePage);
