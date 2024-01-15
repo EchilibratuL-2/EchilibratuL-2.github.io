@@ -4,12 +4,13 @@ var activePage = "home";
 // functii publice
 function $(selector) {
   var el =  document.querySelector(selector);
+  console.info("%o found:", selector, el);
   return el;
 }
 
 function hide(id) {
   console.info("hide", id);
-  document.getElementById(id).style.display = "none";
+  $('#' + id).style.display = "none";
 }
 
 function show(id) {
@@ -43,7 +44,7 @@ function initEvents() {
 }
 
 function showSkills() {
-  var ul = document.querySelector("#skills ul");
+  var ul = $("#skills ul");
 
   var skills = [
     {
