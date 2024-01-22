@@ -61,13 +61,22 @@ function showSkills(skills) {
   ul.innerHTML = text.join("");
 }
 
+function loadSkills() {
+  var promise = fetch("skills.json");
+  promise.then(function (r) {
+    const jsonPromise = r.json();
+    jsonPromise.then(function (skills) {
+      showSkills(skills);
+    });
+  });
+}
+
 setTimeout(() => {
   initRubik(document.getElementById("rubikChallenge"));
   initRubik(document.getElementById("rubikChallengePage"));
 }, 10);
 
-
 // executii
-showSkills([]);
 showPage(activePage);
 initEvents();
+loadSkills();
