@@ -4,7 +4,7 @@ var activePage = "skills";
 // functii publice
 function $(selector) {
   var el = document.querySelector(selector);
-  console.info("%o found:", selector, el);
+// console.info("%o found:", selector, el);
   return el;
 }
 
@@ -62,10 +62,8 @@ function showSkills(skills) {
 }
 
 function loadSkills() {
-  var promise = fetch("skills.json");
-  promise.then(function (r) {
-    const jsonPromise = r.json();
-    jsonPromise.then(function (skills) {
+  fetch("skills.json").then(function (r) {
+    r.json().then(function (skills) {
       showSkills(skills);
     });
   });
