@@ -4,7 +4,7 @@ var activePage = "skills";
 // functii publice
 function $(selector) {
   var el = document.querySelector(selector);
-// console.info("%o found:", selector, el);
+  // console.info("%o found:", selector, el);
   return el;
 }
 
@@ -43,7 +43,18 @@ function initEvents() {
   });
 }
 
+function sortSkillByEndorcements(a, b) {
+  console.info("sort", a, b);
+  return b.endorcements - a.endorcements;
+}
+
+function sortByName(a, b) {
+  return a.name.localeCompare(b.name);
+}
+
 function showSkills(skills) {
+  // skills.sort(sortSkillByEndorcements);
+  skills.sort(sortByName);
   var ul = $("#skills ul");
 
   var text = skills.map(function (skill) {
