@@ -1,5 +1,5 @@
 // variabile publice
-var activePage = "home";
+var activePage = "skills";
 
 // functii publice
 function $(selector) {
@@ -61,7 +61,13 @@ function showSkills(skills) {
   ul.innerHTML = text.join("");
 }
 
+setTimeout(() => {
+  initRubik(document.getElementById("rubikChallenge"));
+  initRubik(document.getElementById("rubikChallengePage"));
+}, 10);
+
+
 // executii
-// showSkills([]);
+showSkills([]);
 showPage(activePage);
 initEvents();

@@ -32,7 +32,7 @@ body {
 }
 #my-picture img:hover {
   border-radius: 50% 5px;
-  border-color: #0798ab;
+  border-color: #232121;
 }
 #content {
   flex: 4;
@@ -51,13 +51,21 @@ body {
 
 .page {
   display: none;
-  background-color: #fff;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 4px;
+  flex: 1;
+  background-color: #ffffff;
+  margin: 0 0 10px 0;
+  padding: 24px;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
 }
-
+.page > h2,
+.page > h3 {
+  margin: 0 0 10px 0;
+  color: #000000;
+}
+.page h3 {
+  margin-top: 20px;
+}
 td {
   padding: 4px;
 }
@@ -65,43 +73,47 @@ th {
   padding: 5px;
 }
 #job-title {
-  color: green;
+  color: rgb(0, 0, 0);
   text-align: right;
   font-family: "Audiowide", sans-serif;
 }
 #top-menu-bar {
-  text-align: center;
-  background-color: #334455;
-  color: #fff;
   margin: 0;
-  padding: 2px;
-  font-family: "Sofia", sans-serif;
-  font-size: 25px;
+  padding: 0;
+  text-align: center;
+  background-color: #000000;
+  color: #fff;
 }
 #top-menu-bar li {
-  display: inline-block;
-  padding: 0;
+  display: inline;
   margin: 0;
+  padding: 0;
 }
+a.page-actions,
 #top-menu-bar a {
-  display: inline-block;
   text-decoration: none;
+  padding: 5px 15px 5px 15px;
+  margin: 4px 0;
   color: #fff;
-  padding: 0 10px;
-  border-radius: 4px;
-  transition: 0.3s;
+  display: inline-block;
+  border-radius: 0.2em;
+  transition: 0.5s;
 }
 #top-menu-bar a:visited {
   color: #fff;
 }
-#top-menu-bar a.active,
-#top-menu-bar a:hover {
-  color: #334455;
-  background: #fff;
+a.page-actions {
+  background-color: #0798ab;
 }
-#top-menu-bar a:active {
-  color: #334455;
-  background: #fff;
+#top-menu-bar a.active {
+  background-color: #05798877;
+}
+a.page-actions.active {
+  background-color: #06899a;
+}
+a.page-actions:hover,
+#top-menu-bar a:hover {
+  background-color: #057988;
 }
 .favorite {
   font-weight: bold;
@@ -111,12 +123,13 @@ th {
 td.favorite {
   font-weight: normal;
 }
-#tablebox {
-  background-color: #334455;
-  color: white;
-  padding: 15px;
+.tablebox {
+  background-color: #FFF;
+  color: rgb(0, 0, 0);
+  padding: 10px;
   text-align: left;
   font-family: "Sofia", sans-serif;
+  border-radius: 5px;
 }
 #side-menu {
   flex: 1;
@@ -134,7 +147,7 @@ td.favorite {
 }
 footer {
   padding: 10px 10px 8px 10px;
-  background-color: #057988;
+  background-color: #2b2828;
   color: #f5f5f5;
   display: flex;
   flex-direction: row;
@@ -163,3 +176,4 @@ footer a:hover {
 #skills li span {
   color: gray;
 }
+

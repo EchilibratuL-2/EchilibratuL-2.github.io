@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gabi</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/rubik.css" />
   </head>
   <body>
     <header>
@@ -37,7 +38,7 @@
       <div id="side-menu">
         <section>
           <form action="secretara.html">
-            <h2 class="fontstyle side-menu">Contact</h2>
+            <h2 class="body">Contact</h2>
             <div>
               <label for="userEmail">Email </label>
               <input
@@ -50,7 +51,7 @@
             </div>
 
             <div>
-              <label for="userName">Your Name</label>
+              <label for="userName">Name</label>
               <input
                 type="text"
                 name="name"
@@ -62,6 +63,82 @@
 
             <button type="submit">Send</button>
           </form>
+        </section>
+        <section>
+          <h2 title="Rubik Face challenge">Cube Rubik</h2>
+          <form action="" id="rubikChallenge">
+            <div class="toolbar">
+              <input class="size-rubikscramble"
+                type="number"
+                name="size"
+                value="3"
+                min="1"
+                max="5"
+                required=""
+                style="width: 50px"
+              />
+              <button class="button-scramble" type="submit">🔃 Scramble</button>
+            </div>
+            <div
+              class="rubik-face rubik-size-3"
+              data-rubik-size="3"
+              style="grid-template-columns: auto auto auto; max-width: 200px"
+            >
+              <div
+                draggable="true"
+                data-number="."
+                style="background: rgb(241, 239, 226)"
+                class="rubik-piece corner"
+              ></div>
+              <div
+                draggable="true"
+                data-number="."
+                style="background: rgb(241, 239, 226)"
+                class="rubik-piece top-edge"
+              ></div>
+              <div
+                draggable="true"
+                data-number=":"
+                style="background: rgb(7, 241, 4)"
+                class="rubik-piece corner"
+              ></div>
+              <div
+                draggable="true"
+                data-number=":"
+                style="background: rgb(7, 241, 4)"
+                class="rubik-piece left-edge"
+              ></div>
+              <div
+                draggable="true"
+                data-number=":"
+                style="background: rgb(7, 241, 4)"
+                class="rubik-piece center"
+              ></div>
+              <div
+                draggable="true"
+                data-number=":::"
+                style="background: rgb(0, 130, 223)"
+                class="rubik-piece right-edge"
+              ></div>
+              <div
+                draggable="true"
+                data-number=":."
+                style="background: rgb(255, 255, 0)"
+                class="rubik-piece corner"
+              ></div>
+              <div
+                draggable="true"
+                data-number="::."
+                style="background: rgb(255, 44, 10)"
+                class="rubik-piece bottom-edge"
+              ></div>
+              <div
+                draggable="true"
+                data-number=":"
+                style="background: rgb(7, 241, 4)"
+                class="rubik-piece corner"
+              ></div>
+            </div>
         </section>
       </div>
 
@@ -104,7 +181,7 @@
     <footer>
       <a
         class="item"
-        href="https://www.linkedin.com/in/gabi-duta-b9a1bb252/"
+        href="https://www.linkedin.com/in/duta-gabi/"
         target="_blank"
       >
         <svg
@@ -140,5 +217,6 @@
       </a>
     </footer>
     <script src="index.js"></script>
+    <script src="rubik.js"></script>
   </body>
 </html>
