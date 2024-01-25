@@ -1,5 +1,5 @@
 // variabile publice
-var activePage = "skills";
+var activePage = "home";
 
 // functii publice
 function $(selector) {
@@ -80,12 +80,13 @@ function loadSkills() {
   });
 }
 
+// executii
+showPage(activePage);
+initEvents();
+loadSkills();
+
 setTimeout(() => {
   initRubik(document.getElementById("rubikChallenge"));
   initRubik(document.getElementById("rubikChallengePage"));
 }, 10);
 
-// executii
-showPage(activePage);
-initEvents();
-loadSkills();

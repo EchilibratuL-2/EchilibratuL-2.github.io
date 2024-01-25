@@ -1,21 +1,16 @@
 [
   {
     "name": "HTML",
-    "endorcements": 6,
+    "endorcements": 10,
     "favorite": true
   },
   {
     "name": "CSS",
-    "endorcements": 5
+    "endorcements": 10
   },
   {
     "name": "JS",
     "endorcements": 8,
     "favorite": true
-  },
-  {
-    "name": "Word",
-    "endorcements": 1,
-    "favorite": false
   }
 ]
